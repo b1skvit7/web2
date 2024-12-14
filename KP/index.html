@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2rism</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Сайт туристичної агенції для планування сімейних відпусток">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn">&#8593;</a>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Зв'язатися з нами</h2>
+            <form>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Ваше повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <a href="index.html"><img src="img/logo.png" class="logo" alt="img"></a>
+        <nav>
+            <ul>
+                <li><a href="#">головна</a></li>
+                <li><a href="hotel.html">готелі</a></li>
+                <li><a href="#">ресторани</a></li>
+                <li><a href="#">тури</a></li>
+                <li><a href="#">пункти призначення</a></li>
+                <li><a href="#">розваги</a></li>
+                <li><a href="#" id="contactBtn">контакти</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <p>Привіт,<br><span>Алес Несетріл</span></p>
+            <img src="img/avatar.png" alt="Profile Picture">
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Відкрийте для себе найцікавіші місця</h1>
+            <a href="#" class="discover-button"><i class="fa-solid fa-globe" style="color: #ffffff;"></i>Відкрити на 3D Globe</a>
+        </section>
+        <section class="block-search">
+            <div class="card-search">
+                <i class="fa-solid fa-location-dot fa-xl" style="color: #FFA800;"></i>
+                <div>
+                    <h2>Розташування</h2>
+                    <p>Досліджуйте найближчі місця</p>
+                </div>
+            </div>
+            <div class="card-search">
+                <i class="fa-solid fa-person-biking fa-xl" style="color: #FFA800;"></i>
+                <div>
+                    <h2>Розваги</h2>
+                    <p>Усі Розваги</p>
+                </div>
+            </div>
+            <div class="card-search">
+                <i class="fa-regular fa-calendar fa-xl" style="color: #FFA800;"></i>
+                <div>
+                    <h2>Коли</h2>
+                    <p>Виберіть дату</p>
+                </div>
+            </div>
+            <div class="card-search">
+                <i class="fa-regular fa-user fa-xl" style="color: #FFA800;"></i>
+                <div>
+                    <h2>Гості</h2>
+                    <p>1 гість</p>
+                </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #fff;"></i></a>
+        </section>
+    </main>
+    <section class="block">
+        <div>
+            <h3 class="sections-title">Популярні напрямки</h3>
+            <div class="dest-cards-block">
+                <div class="card-destination">
+                    <img src="img/card.png" alt="img">
+                    <div>
+                        <h4>Біг-Сур</h4>
+                        <p>Каліфорнія, США</p>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card1.png" alt="img">
+                    <div>
+                        <h4>Прескотт</h4>
+                        <p>Арізона, США</p>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card2.png" alt="img">
+                    <div>
+                        <h4>Форт Майєрс</h4>
+                        <p>Флорида, США</p>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card3.png" alt="img">
+                    <div>
+                        <h4>Тусон</h4>
+                        <p>Арізона, США</p>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card4.png" alt="img">
+                    <div>
+                        <h4>Святий Йосип</h4>
+                        <p>Мічиган, США</p>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card5.png" alt="img">
+                    <div>
+                        <h4>Мадрид</h4>
+                        <p>Іспанія</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div>
+            <div class="title-block">
+                <h3 class="sections-title">Готелі та ресторани</h3>
+                <a href="hotel.html">Переглянути все <i class="fa-solid fa-arrow-right" style="color: #7B61FF;"></i></a>
+            </div>
+            <div class="dest-cards-block">
+                <div class="card-hotels">
+                    <img src="img/card-hotel.png" alt="img">
+                    <div>
+                        <h4>Готель Monastero Santa Rosa</h4>
+                        <div class="stars-block">
+                            <p><i class="fa-solid fa-location-dot" style="color: #7B61FF;"></i>Салерно, Італія</p>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card-hotel1.png" alt="img">
+                    <div>
+                        <h4>Гранд Готель Тремеццо</h4>
+                        <div class="stars-block">
+                            <p><i class="fa-solid fa-location-dot" style="color: #7B61FF;"></i>Озеро Комо, Італія</p>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card-hotel2.png" alt="img">
+                    <div>
+                        <h4>Оберої Удайвілас, Удайпур</h4>
+                        <div class="stars-block">
+                            <p><i class="fa-solid fa-location-dot" style="color: #7B61FF;"></i>Удайпур, Індія</p>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card-hotel3.png" alt="img">
+                    <div>
+                        <h4>АКА Беверлі Хіллз</h4>
+                        <div class="stars-block">
+                            <p><i class="fa-solid fa-location-dot" style="color: #7B61FF;"></i>Лос-Анджелес, США</p>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div>
+            <div class="title-block">
+                <h3 class="sections-title">Поради для подорожей</h3>
+                <a href="advice.html">Переглянути все <i class="fa-solid fa-arrow-right" style="color: #7B61FF;"></i></a>
+            </div>
+            <div class="dest-cards-block">
+                <div class="card-tips">
+                    <img src="img/card-travel.png" alt="img">
+                    <div>
+                        <h4>Східне село із незвичним морозивом</h4>
+                        <p>У цьому турі довжиною 1,5 милі тривалістю 1,5 години ми зупинимося
+                            в п’яти різних магазинах морозива світового класу. У кожному
+                            магазині морозива ми дослідимо історію бізнесу та побачимо,
+                            що робить морозиво унікальним, коли ви смакуватимете кожне...</p>
+                        <div class="card-info">
+                            <p><i class="fa-regular fa-calendar" style="color: #979797;"></i>Сьогодні</p>
+                            <p><i class="fa-regular fa-user" style="color: #979797;"></i>Марія Філіпс</p>
+                            <p><i class="fa-regular fa-comment" style="color: #979797;"></i>2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-tips">
+                    <img src="img/card-travel2.png" alt="img">
+                    <div>
+                        <h4>Кінематографічна фотопрогулянка по Бруклінському мосту</h4>
+                        <p>Цей досвід відбувається в парку Brooklyn Bridge і Brooklyn Bridge,
+                            але я завжди готовий захопити клієнтів у різних місцях за запитом і
+                            за додаткову плату.</p>
+                        <div class="card-info">
+                            <p><i class="fa-regular fa-calendar" style="color: #979797;"></i>Сьогодні</p>
+                            <p><i class="fa-regular fa-user" style="color: #979797;"></i>Джеймс Калзоні</p>
+                            <p><i class="fa-regular fa-comment" style="color: #979797;"></i>17</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div>
+            <div class="title-block">
+                <h3 class="sections-title">Розваги</h3>
+                <a href="#">Переглянути все <i class="fa-solid fa-arrow-right" style="color: #7B61FF;"></i></a>
+            </div>
+            <div class="dest-cards-block">
+                <div class="card-hotels">
+                    <img src="img/card-act.png" alt="img">
+                    <div>
+                        <h4>Вітрильний спорт</h4>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card-act1.png" alt="img">
+                    <div>
+                        <h4>Скелелазіння</h4>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card-act2.png" alt="img">
+                    <div>
+                        <h4>Катання на лижах</h4>
+                    </div>
+                </div>
+                <div class="card-destination">
+                    <img src="img/card-act3.png" alt="img">
+                    <div>
+                        <h4>Піші прогулянки</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div class="about-block">
+            <div>
+                <h3 class="sections-title">Розваги</h3>
+                <p>Наша туристична агенція створена з турботою про кожного члена вашої родини.
+                    Ми розуміємо, що сімейні відпустки — це час, коли народжуються найтепліші
+                    спогади та зміцнюються сімейні зв’язки. Саме тому наша команда спеціалістів
+                    пропонує індивідуальні рішення для кожного клієнта, враховуючи ваші побажання,
+                    потреби та стиль відпочинку.</p>
+                <a href="#">Переглянути все <i class="fa-solid fa-arrow-right" style="color: #7B61FF;"></i></a>
+            </div>
+            <img src="img/col.png" alt="img">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="img/logo-black.png" alt="img">
+                <p>Ми завжди робимо наших клієнтів задоволеними</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Про нас</h3>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Особливості</a></li>
+                    <li><a href="#">Новини</a></li>
+                    <li><a href="#">Меню</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Компанія</h3>
+                <ul>
+                    <li><a href="#">Чому ми</a></li>
+                    <li><a href="#">Партнерка</a></li>
+                    <li><a href="#">Запитання</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Підтримка</h3>
+                <ul>
+                    <li><a href="#">Акаунт</a></li>
+                    <li><a href="#">Центр підтримки</a></li>
+                    <li><a href="#">Зворотній зв'язок</a></li>
+                    <li><a href="#">Зв'яжіться з нами</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Підпишіться на наші інформаційні бюлетені з оглядами місць призначення</h3>
+                <form action="#">
+                    <input type="email" placeholder="Ваш емейл" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

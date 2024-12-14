@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background: #030406;
+    gap: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+nav ul li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #818182;
+    width: 150px;
+    text-align: right;
+}
+
+.user-profile p span {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/bg-image.png") no-repeat center center/cover;
+    border-radius: 0 0 64px 64px;
+    height: 800px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hero h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.discover-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 272px;
+    height: 72px;
+    background: #7B61FF;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.block-search {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 8px;
+    width: 1140px;
+    height: 88px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 184px;
+}
+
+.block-search a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #7B61FF;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.card-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card-search i{
+    padding: 16px;
+}
+
+.card-search h2{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #979797;
+}
+
+.card-search p{
+    font-weight: 600;
+    line-height: 24px;
+    color: #161414;
+}
+
+/*Популярні напрямки*/
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 0;
+}
+
+.dest-cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1360px;
+}
+
+.sections-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #161414;
+    margin-bottom: 64px;
+}
+
+.card-destination h4, .card-hotels h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #161414;
+    margin-top: 10px;
+}
+
+.card-destination p, .card-hotels p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #979797;
+}
+
+.card-hotels img {
+    width: 316px;
+    height: 380px;
+    border-radius: 24px;
+}
+
+/*Готелі*/
+
+.stars-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.stars-block p i{
+    margin-right: 5px;
+}
+
+/*Подорожі*/
+
+.title-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-block a, .about-block a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 175px;
+    height: 40px;
+    background: #F6F4FF;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #7B61FF;
+}
+
+.card-info {
+    display: flex;
+    gap: 24px;
+}
+
+.card-info p i {
+    margin-right: 5px;
+}
+
+.card-tips {
+    position: relative;
+    display: flex;
+    gap: 32px;
+    width: 664px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979797;
+}
+
+.card-tips img {
+    width: 316px;
+    height: 380px;
+    border-radius: 24px;
+}
+
+.card-tips h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #161414;
+    margin-bottom: 16px;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+}
+
+.about-block {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #5B5B5B;
+}
+
+.about-block div {
+    width: 548px;
+    margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.about-block div h3 {
+    margin-bottom: 0;
+}
+
+.about-block img {
+    width: 548px;
+    height: 488px;
+    border-radius: 24px;
+}
+
+/*Футер*/
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 120px;
+    margin-top: 120px;
+}
+
+.footer-section img {
+    width: 87px;
+}
+
+.footer-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-section h2, .footer-section h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #161414;
+}
+
+.footer-section p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #979797;
+    width: 300px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #979797;
+    text-decoration: none;
+}
+
+.footer-section .social-icons a {
+    margin-right: 10px;
+    color: #6a5acd;
+    font-size: 20px;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.footer-section button {
+    background-color: #6a5acd;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section button i {
+    font-size: 16px;
+}
+
+.travel-tips-form {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.travel-tips-form h3 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.travel-tips-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.travel-tips-form input, .travel-tips-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.travel-tips-form button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #6a5acd;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.travel-tips-form button:hover {
+    background-color: #473a96;
+}
+
+/*Модальне вікно*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7B61FF;
+}
+
+/*Скрол ввверх*/
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6a5acd;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.scroll-to-top:hover {
+    background-color: #283655;
+}
